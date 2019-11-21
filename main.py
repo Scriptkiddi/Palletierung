@@ -60,8 +60,10 @@ def bbl(box, empty_maximal_spaces):
             if ems.x < ems_opt.x or \
                     ems.x == ems_opt.x and ems.y < ems_opt.y or \
                     ems.x == ems_opt.x and ems.y == ems_opt.y and ems.z < ems_opt.z:
+
                 ems_opt = ems
 
+    print("Opt ems {} for box {}".format(ems_opt, box))
     return ems_opt
 
 
@@ -76,13 +78,16 @@ def difference_process(box, space):
     # get bottom left corner of our box and upper right corner
     x3, y3, z3 = box.llc()
     x4, y4, z4 = box.urc()
+    assert x1 <= x3 <= x4 <= x2
+    assert y1 <= y3 <= y4 <= y2
+    assert z1 <= z3 <= z4 <= z2
     intervals = [
         Palette(x1, y1, z1, x3, y2, z2),
         Palette(x4, y1, z1, x2, y2, z2),
         Palette(x1, y1, z1, x2, y3, z2),
         Palette(x1, y4, z1, x2, y2, z2),
         Palette(x1, y1, z1, x2, y2, z3),
-        Palette(x1, y1, z4, x2, y2, z2)
+        Palette(x1, y1, z4, x4, y4, z2) # oder x1,y1,z4,x2,y2,z2 änderung weil support von unten benötigt
     ]
     print("Intervals before Removal: {}".format(intervals))
 
@@ -108,13 +113,28 @@ def difference_process(box, space):
     for interval in intervals:
         x1, y1, z1 = interval.llc()
         x2, y2, z2 = interval.urc()
-        print("{} {} {}".format(x2,y2,z2))
         if x2 > 1200 or y2 > 800 or z2 > 1500:
             print("removing because boundary")
             intervals.remove(interval)
     print("Intervals after Removal: {}".format(intervals))
     print("--------------")
     return intervals
+
+def remove_overlapping(opt_ems, emss):
+    # Removing intervals that are inside another interval
+    for interval in emss:
+        x1, y1, z1 = interval.llc()
+        x2, y2, z2 = interval.urc()
+        x3, y3, z3 = opt_ems.llc()
+        x4, y4, z4 = opt_ems.urc()
+        if x1 >= x3 and y1 >= y3 and z1 >= z3 and x2 <= x4 and y2 <= y4 and z2 <= z4:
+            print("Removing {} it overlaps with {}".format(interval, opt_ems))
+            try:
+                emss.remove(interval)
+            except ValueError:
+                pass
+    return emss
+
 
 
 def fitness(individual):
@@ -202,7 +222,7 @@ if __name__ == "__main__":
     for item in items:
         opt_ems = bbl(item, emss)
         item.place(opt_ems.x, opt_ems.y, opt_ems.z)
-        emss.remove(opt_ems)
+        emss = remove_overlapping(opt_ems, emss)
         new_emss = difference_process(item, opt_ems)
         emss += new_emss
     window3d = Window3D(items, width, depth, height, width=854, height=480, caption='Palettierung', resizable=True)

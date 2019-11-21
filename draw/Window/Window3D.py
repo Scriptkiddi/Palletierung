@@ -36,9 +36,9 @@ class Window3D(Window):
         elif KEY == key.E:
             self.mouse_lock = not self.mouse_lock
         elif KEY == key.UP:
-            if self.box_pointer < len(self.boxes):
-                self.box_pointer += 1
+            if self.box_pointer < len(self.boxes)-1:
                 print(self.boxes[self.box_pointer].box)
+                self.box_pointer += 1
         elif KEY == key.DOWN:
             if self.box_pointer > 0:
                 self.box_pointer -= 1

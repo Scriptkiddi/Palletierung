@@ -1,5 +1,6 @@
 class Palette:
     def __init__(self, x1, y1, z1, x2, y2, z2):
+        assert x2 >= x1 and y2 >= y1 and z2 >= z1
         self.x = x1
         self.y = y1
         self.z = z1
@@ -11,7 +12,7 @@ class Palette:
         return self.x, self.y, self.z
 
     def urc(self):  # Upper Right Corner
-        return self.width, self.depth, self.height
+        return self.x+self.width, self.y+self.depth, self.z+self.height
 
     def place(self, x, y, z):  # Upper Right Corner
         print("placing at {}x{}x{}".format(x, y, z))
