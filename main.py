@@ -2,7 +2,10 @@ import random
 import csv
 import numpy
 import itertools
-from draw import Window, glClearColor, glEnable, pyglet, GL_DEPTH_TEST
+
+import pyglet
+from pyglet.gl import glClearColor, GL_DEPTH_TEST, glEnable
+
 from Box import Box
 from Palette import Palette
 
@@ -10,6 +13,9 @@ from deap import algorithms
 from deap import base
 from deap import creator
 from deap import tools
+
+from draw.Window.Window2D import Window2D
+from draw.Window.Window3D import Window3D
 
 IND_INIT_SIZE = 5
 MAX_ITEM = 50
@@ -184,10 +190,15 @@ if __name__ == "__main__":
         new_emss = difference_process(item, opt_ems)
         emss += new_emss
         emss.remove(opt_ems)
-        print(opt_ems)
-    window = Window(items, width=854, height=480, caption='Palettierung', resizable=True)
-    glClearColor(0.5, 0.7, 1, 1)
+    window3d = Window3D(items, width, depth, height, width=854, height=480, caption='Palettierung', resizable=True)
     glEnable(GL_DEPTH_TEST)
+    glClearColor(0.5, 0.7, 1, 1)
+    windowXY = Window2D(items, width, depth, height, True, True, False, width=854, height=480, caption='XY', resizable=True)
+    glClearColor(0.5, 0.7, 1, 1)
+    windowXZ = Window2D(items, width, depth, height, True, False, True, width=854, height=480, caption='XZ', resizable=True)
+    glClearColor(0.5, 0.7, 1, 1)
+    windowYZ = Window2D(items, width, depth, height, False, True, True, width=854, height=480, caption='YZ', resizable=True)
+    glClearColor(0.5, 0.7, 1, 1)
     pyglet.app.run()
 
     # emss = difference_process(items[0], palette)
