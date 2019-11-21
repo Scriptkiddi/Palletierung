@@ -27,6 +27,9 @@ class Window3D(Window):
         if self.mouse_lock:
             self.spectator.mouse_motion(dx, dy)
 
+    def on_mouse_motion(self, x, y, dx, dy):
+        if self.mouse_lock: self.spectator.mouse_motion(dx, dy)
+
     def on_key_press(self, KEY, MOD):
         if KEY == key.ESCAPE:
             self.close()

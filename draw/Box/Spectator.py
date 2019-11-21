@@ -29,3 +29,14 @@ class Spectator:
             self.pos[1] += s
         if keys[key.LSHIFT]:
             self.pos[1] -= s
+
+    def mouse_motion(self, dx, dy):
+        dx /= 8
+        dy /= 8
+        self.rot[0] += dy
+        self.rot[1] -= dx
+        if self.rot[0] > 90:
+            self.rot[0] = 90
+        elif self.rot[0] < -90:
+            self.rot[0] = -90
+

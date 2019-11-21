@@ -13,7 +13,7 @@ class Box:
     def urc(self):  # Upper Right Corner
         return self.x + self.width, self.y + self.depth, self.z + self.height
 
-    def place(self, x, y, z):  # Upper Right Corner
+    def place(self, x, y, z):
         print("placing at {}x{}x{}".format(x, y, z))
         self.x = x
         self.y = y

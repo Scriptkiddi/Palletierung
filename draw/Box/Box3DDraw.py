@@ -7,9 +7,9 @@ from draw.Box.BoxDraw import BoxDraw
 class Box3DDraw(BoxDraw):
     def __init__(self, box):
         self.box = box
-        self.top = self.get_tex('test/grass_top.png')
+        self.top = self.get_tex('resources/textures/grass_top.png')
         self.side = self.get_tex('resources/textures/side.png')
-        self.bottom = self.get_tex('test/dirt.png')
+        self.bottom = self.get_tex('resources/textures/dirt.png')
 
         self.batch = pyglet.graphics.Batch()
 
