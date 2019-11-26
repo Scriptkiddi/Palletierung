@@ -54,13 +54,12 @@ def bbl(box, empty_maximal_spaces):
 
     ems_opt = empty_maximal_spaces[0]
     for ems in empty_maximal_spaces:
-        #if ems.height >= 1500 or ems.width >= 1200 or ems.depth >= 800:
+        # if ems.height >= 1500 or ems.width >= 1200 or ems.depth >= 800:
         #    continue
         if ems.width >= box.width and ems.depth >= box.depth and ems.height >= box.height:
             if ems.x < ems_opt.x or \
                     ems.x == ems_opt.x and ems.y < ems_opt.y or \
                     ems.x == ems_opt.x and ems.y == ems_opt.y and ems.z < ems_opt.z:
-
                 ems_opt = ems
 
     print("Opt ems {} for box {}".format(ems_opt, box))
@@ -87,7 +86,7 @@ def difference_process(box, space):
         Palette(x1, y1, z1, x2, y3, z2),
         Palette(x1, y4, z1, x2, y2, z2),
         Palette(x1, y1, z1, x2, y2, z3),
-        Palette(x1, y1, z4, x4, y4, z2) # oder x1,y1,z4,x2,y2,z2 änderung weil support von unten benötigt
+        Palette(x1, y1, z4, x4, y4, z2)  # oder x1,y1,z4,x2,y2,z2 änderung weil support von unten benötigt
     ]
     print("Intervals before Removal: {}".format(intervals))
 
@@ -120,6 +119,7 @@ def difference_process(box, space):
     print("--------------")
     return intervals
 
+
 def remove_overlapping(opt_ems, emss):
     # Removing intervals that are inside another interval
     for interval in emss:
@@ -134,7 +134,6 @@ def remove_overlapping(opt_ems, emss):
             except ValueError:
                 pass
     return emss
-
 
 
 def fitness(individual):
@@ -201,21 +200,60 @@ def main():
     return pop, stats, hof
 
 
-if __name__ == "__main__":
+def not_all_skipped(box_dict):
+    for box_type in box_types:
+        if not box_type['skip']:
+            return True
+    return False
 
-    palette = Box(0, 0, 0, 1200, 800, 1500)
+
+def placement(boxes_to_pack, box_types, vlt, full_support=True):
+    emss = [Palette(0, 0, 0, 1200, 800, 1500)]  # Empty bin Maximal Space
+    quantity_remain = []
+    skip = []
+    while not_all_skipped(box_types):
+        i = 0
+        # get index of first box that is not skipped or packed
+        for j, box in enumerate(boxes_to_pack):
+            if not box.is_packed() and not box_types[box.type_id()]['skip']:
+                i = j
+        ems = None
+        ems = bbl(item, emss)
+        if ems == None:
+            box_types[box.type_id()]['skip'] = True
+        else:
+            pass
+            # TODO fill vector layers with
+            nBox = 0
+            # TODO pack layer at origin of ems
+            # TODO update info
+            box_types[box.type_id()]['quantity'] = box_types[box.type_id()]['quantity'] - nBox
+            if box_types[box.type_id()]['quantity'] == 0:
+                box_types[box.type_id()]['skip'] = True
+            box.placed()
+
+
+if __name__ == "__main__":
 
     # Reading in products and storing them into the item variable
     items = []
+    box_types = {}
     with open("resources/Maße_aldi.csv") as csv_file:
         csv_reader = csv.DictReader(csv_file, delimiter=";")
         for row in csv_reader:
-            for i in row['Quantity']:
+            for i in range(0, int(row['Quantity'])):
                 width = int(row['Width'])
                 height = int(row['Height'])
                 depth = int(row['Depth'])
+                type_id = row['Name']
+                rotate_x = bool(row['RotateX'])
+                rotate_y = bool(row['RotateY'])
+                rotate_z = bool(row['RotateZ'])
                 weight = 5
-                items.append(Box(0, 0, 0, width, depth, height))
+                items.append(Box(0, 0, 0, width, depth, height, type_id, rotate_x, rotate_y, rotate_z))
+            box_types.update({type_id: {"quantity": row['Quantity'], "skip": False}})
+    print(box_types)
+    exit(0)
     # init empty palette
     emss = [Palette(0, 0, 0, 1200, 800, 1500)]  # Empty bin Maximal Space
     # items[0].place(opt_ems.x, opt_ems.y, opt_ems.z)
