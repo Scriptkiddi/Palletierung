@@ -15,7 +15,6 @@ class Box3DDraw(BoxDraw):
 
         tex_coords = ('t2f', (0, 0, 1, 0, 1, 1, 0, 1,))
 
-        print(box.llc())
         x, y, z = box.llc()[0] / 10, box.llc()[2] / 10, box.llc()[1] / 10
         X, Y, Z = box.urc()[0] / 10, box.urc()[2] / 10, box.urc()[1] / 10
 

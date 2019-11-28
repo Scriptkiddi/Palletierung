@@ -43,20 +43,6 @@ random.seed(64)
 # toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
 
-def remove_overlapping(opt_ems, emss):
-    # Removing intervals that are inside another interval
-    for interval in emss:
-        x1, y1, z1 = interval.llc()
-        x2, y2, z2 = interval.urc()
-        x3, y3, z3 = opt_ems.llc()
-        x4, y4, z4 = opt_ems.urc()
-        if x1 >= x3 and y1 >= y3 and z1 >= z3 and x2 <= x4 and y2 <= y4 and z2 <= z4:
-            print("Removing {} it overlaps with {}".format(interval, opt_ems))
-            try:
-                emss.remove(interval)
-            except ValueError:
-                pass
-    return emss
 
 
 def read_input(filename):
@@ -89,9 +75,11 @@ if __name__ == "__main__":
     vector_layer_types = []
     for i in boxes_to_pack:
         vector_layer_types.append(random.random())
+    print("{} need to be packed".format(len(boxes_to_pack)))
     boxes_packed = placement(boxes_to_pack, box_types, vector_layer_types)
-    print(boxes_packed)
-    exit(0)
+    #print(boxes_packed)
+    #assert (len(list(filter(lambda x: not x.packed, boxes_packed)))) == 0, "unpacked packages"
+    #exit(0)
     # init empty palette
     # emss = [Palette(0, 0, 0, 1200, 800, 1500)]  # Empty bin Maximal Space
     ## items[0].place(opt_ems.x, opt_ems.y, opt_ems.z)
@@ -109,13 +97,13 @@ if __name__ == "__main__":
     glClearColor(0.5, 0.7, 1, 1)
     debug_2d = False
     if debug_2d:
-        windowXY = Window2D(items, width, depth, height, True, True, False, width=854, height=480, caption='XY',
+        windowXY = Window2D(boxes_packed, width, depth, height, True, True, False, width=854, height=480, caption='XY',
                             resizable=True)
         glClearColor(0.5, 0.7, 1, 1)
-        windowXZ = Window2D(items, width, depth, height, True, False, True, width=854, height=480, caption='XZ',
+        windowXZ = Window2D(boxes_packed, width, depth, height, True, False, True, width=854, height=480, caption='XZ',
                             resizable=True)
         glClearColor(0.5, 0.7, 1, 1)
-        windowYZ = Window2D(items, width, depth, height, False, True, True, width=854, height=480, caption='YZ',
+        windowYZ = Window2D(boxes_packed, width, depth, height, False, True, True, width=854, height=480, caption='YZ',
                             resizable=True)
         glClearColor(0.5, 0.7, 1, 1)
     pyglet.app.run()

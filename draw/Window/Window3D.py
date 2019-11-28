@@ -38,6 +38,7 @@ class Window3D(Window):
         elif KEY == key.UP:
             if self.box_pointer < len(self.boxes)-1:
                 print(self.boxes[self.box_pointer].box)
+                print(self.boxes[self.box_pointer].box.box_type.identifier)
                 self.box_pointer += 1
         elif KEY == key.DOWN:
             if self.box_pointer > 0:
