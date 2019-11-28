@@ -39,10 +39,14 @@ def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
             print("-Update S")
             # TODo this is broken
             # TODo  is this the correct processes? do the boundaries align
+            new_emss = difference_process(layer, emss)  # Apply DP process from Lai and Chan (1997)
+            print("#############")
             print(emss)
-            emss = difference_process(layer, emss)  # Apply DP process from Lai and Chan (1997)
-            print(emss)
-            emss = remove_overlapping(ems, emss)
+            print(new_emss)
+            print("#############")
+            emss = new_emss
+
+            #emss = remove_overlapping(ems, emss)
             print("-Number of emss {}".format(len(emss)))
             # print(emss)
             if full_support:
@@ -71,7 +75,7 @@ def remove_overlapping(opt_ems, intervals):
         x2, y2, z2 = interval_a.urc()
         x3, y3, z3 = interval_b.llc()
         x4, y4, z4 = interval_b.urc()
-        if x1 >= x3 and y1 >= y3 and z1 >= z3 and x2 <= x4 and y2 <= y4 and z2 <= z4:
+        if x1 >= x3 and y1 >= y3 and z1 >= z3 or x2 <= x4 and y2 <= y4 and z2 <= z4:
             # print("Removing {} it overlaps with {}".format(interval_a, interval_b))
             if interval_a in intervals:
                 intervals.remove(interval_a)

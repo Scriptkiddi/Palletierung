@@ -40,3 +40,12 @@ class Layer(Cube):
                 box.place(x, y, z)
                 box.layer = self
 
+    def __str__(self):
+        if self.x is not None and self.y is not None and self.z is not None:
+            return "({},{})x({},{})x({},{})".format(self.x, self.x + self.width, self.y, self.y + self.depth, self.z,
+                                                    self.z + self.height)
+        else:
+            return "{}x{}x{}".format(self.width, self.depth, self.height)
+
+    def __repr__(self):
+        return self.__str__()
