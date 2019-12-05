@@ -39,12 +39,18 @@ def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
             print("-Update S")
             # TODo this is broken
             # TODo  is this the correct processes? do the boundaries align
-            new_emss = difference_process(layer, emss)  # Apply DP process from Lai and Chan (1997)
+            new_emss = []
+            for ems in emss:
+                if layer in ems:
+                   new_emss = new_emss + emss difference_process(layer, ems)
+                    emss.remove(ems)
+            new_emss = new_emss + emss
             print("#############")
             print(emss)
             print(new_emss)
             print("#############")
-            emss = new_emss
+            emss.remove(ems)
+            emss = emss + new_emss
 
             #emss = remove_overlapping(ems, emss)
             print("-Number of emss {}".format(len(emss)))
