@@ -8,7 +8,7 @@ from placement.back_bottom_left import back_bottom_left
 
 def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
     ITER = 0
-    emss = [EmptyMaximumSpace(0, 0, 0, 1200, 800, 1500)]  # Empty bin Maximal Space
+    empty_maximal_spaces = [EmptyMaximumSpace(0, 0, 0, 1200, 800, 1500)]  # Empty bin Maximal Space
     layers = []
     while not_all_skipped(box_types):
         print("Iteration {}".format(ITER))
@@ -21,7 +21,7 @@ def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
                 i = j
         box = boxes_to_pack[i]
         box_type = box.get_type()
-        ems = back_bottom_left(box, emss)
+        ems = back_bottom_left(box, empty_maximal_spaces)
         if ems is None:
             print("Cannot fit box {} of  {}".format(box, box_type))
             box.get_type().skip = True
@@ -41,22 +41,23 @@ def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
             layers.append(layer)
             # update s
             print("-Update S")
+            # emss = empty_maximal_spaces
             new_emss = []
-            emss_to_remove = []
-            for ems in emss:
+            emss_to_remove = []  # Changing a list while iterating over it does not work in python
+            for ems in empty_maximal_spaces:
                 if layer.in_ems(ems):
-                    layer_tmp = ems.crop_layer(layer)
+                    layer_tmp = ems.crop_layer(layer)  # A layer object that is cropped to the current ems used
                     if not layer_tmp.is_thin():
-                        tmp_emss = difference_process(layer_tmp, ems)
-                        new_emss = new_emss + tmp_emss
+                        new_emss = new_emss + difference_process(layer_tmp, ems)
                         emss_to_remove.append(ems)
+            # Removing empty maximal spaces that have been divided by the new placed layer
             for ems in emss_to_remove:
-                if ems in emss:
-                    emss.remove(ems)
-            emss = new_emss + emss
-            emss = remove_included(emss)
+                if ems in empty_maximal_spaces:
+                    empty_maximal_spaces.remove(ems)
+            # Merging the new spaces with our old empty_maximal_spaces
+            empty_maximal_spaces = remove_included(new_emss + empty_maximal_spaces)
             if full_support:
-                for ems in emss:
+                for ems in empty_maximal_spaces:
                     if ems.height == layer.urc()[2]:
                         print("run max join")
                         pass
@@ -82,7 +83,7 @@ def remove_included(intervals):
         x3, y3, z3 = interval_b.llc()
         x4, y4, z4 = interval_b.urc()
         if x1 >= x3 and y1 >= y3 and z1 >= z3 and x2 <= x4 and y2 <= y4 and z2 <= z4:
-            #print("Removing {} it is included from {}".format(interval_a, interval_b))
+            # print("Removing {} it is included from {}".format(interval_a, interval_b))
             if interval_a in intervals:
                 intervals.remove(interval_a)
     return intervals
