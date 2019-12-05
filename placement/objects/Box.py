@@ -23,6 +23,7 @@ class Box(Cube):
     def get_type(self):
         return self.box_type
 
+
     def get_layer(self, ems, quantity, direction):
         max_boxes_direction_1 = 0
         for i in range(0, quantity):

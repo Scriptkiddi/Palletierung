@@ -7,9 +7,12 @@ from placement.back_bottom_left import back_bottom_left
 
 
 def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
+    ITER = 0
     emss = [EmptyMaximumSpace(0, 0, 0, 1200, 800, 1500)]  # Empty bin Maximal Space
     layers = []
     while not_all_skipped(box_types):
+        print("Iteration {}".format(ITER))
+        ITER += 1
         # print(len(list(filter(lambda x: x.skip, box_types))))
         i = 0
         # get index of first box that is not skipped or packed
@@ -24,6 +27,7 @@ def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
             box.get_type().skip = True
         else:
             print("Packing box {} of {}".format(box, box_type))
+            print("EMS: {}".format(ems))
             print("-Generating Layers")
             layers_with_quantity = box.get_layers(ems, box_type.quantity())
             max_layers = len(layers_with_quantity)
@@ -37,24 +41,20 @@ def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
             layers.append(layer)
             # update s
             print("-Update S")
-            # TODo this is broken
-            # TODo  is this the correct processes? do the boundaries align
             new_emss = []
+            emss_to_remove = []
             for ems in emss:
-                if layer in ems:
-                   new_emss = new_emss + emss difference_process(layer, ems)
+                if layer.in_ems(ems):
+                    layer_tmp = ems.crop_layer(layer)
+                    if not layer_tmp.is_thin():
+                        tmp_emss = difference_process(layer_tmp, ems)
+                        new_emss = new_emss + tmp_emss
+                        emss_to_remove.append(ems)
+            for ems in emss_to_remove:
+                if ems in emss:
                     emss.remove(ems)
-            new_emss = new_emss + emss
-            print("#############")
-            print(emss)
-            print(new_emss)
-            print("#############")
-            emss.remove(ems)
-            emss = emss + new_emss
-
-            #emss = remove_overlapping(ems, emss)
-            print("-Number of emss {}".format(len(emss)))
-            # print(emss)
+            emss = new_emss + emss
+            emss = remove_included(emss)
             if full_support:
                 for ems in emss:
                     if ems.height == layer.urc()[2]:
@@ -62,7 +62,7 @@ def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
                         pass
                         # ems = maxjoin(ems) TODo implement
                 pass
-            # print(box)
+        print("-----")
     return layers
     # Apply Max Join procedure
 
@@ -74,26 +74,15 @@ def not_all_skipped(box_types):
     return False
 
 
-def remove_overlapping(opt_ems, intervals):
+def remove_included(intervals):
     # Removing intervals that are inside another interval
     for interval_a, interval_b in itertools.combinations(intervals, 2):
         x1, y1, z1 = interval_a.llc()
         x2, y2, z2 = interval_a.urc()
         x3, y3, z3 = interval_b.llc()
         x4, y4, z4 = interval_b.urc()
-        if x1 >= x3 and y1 >= y3 and z1 >= z3 or x2 <= x4 and y2 <= y4 and z2 <= z4:
-            # print("Removing {} it overlaps with {}".format(interval_a, interval_b))
+        if x1 >= x3 and y1 >= y3 and z1 >= z3 and x2 <= x4 and y2 <= y4 and z2 <= z4:
+            #print("Removing {} it is included from {}".format(interval_a, interval_b))
             if interval_a in intervals:
                 intervals.remove(interval_a)
-    #for interval in intervals:
-    #    x1, y1, z1 = interval.llc()
-    #    x2, y2, z2 = interval.urc()
-    #    x3, y3, z3 = opt_ems.llc()
-    #    x4, y4, z4 = opt_ems.urc()
-    #    if x1 >= x3 and y1 >= y3 and z1 >= z3 and x2 <= x4 and y2 <= y4 and z2 <= z4:
-    #        print("Removing {} it overlaps with {}".format(interval, opt_ems))
-    #        try:
-    #            intervals.remove(interval)
-    #        except ValueError:
-    #            pass
     return intervals

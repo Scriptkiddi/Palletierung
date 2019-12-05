@@ -6,7 +6,7 @@ def back_bottom_left(box, empty_maximal_spaces):
         # if ems.height >= 1500 or ems.width >= 1200 or ems.depth >= 800:
         #    continue
         if ems.width >= box.width and ems.depth >= box.depth and ems.height >= box.height:
-            print("box fits into ems")
+            #print("box fits into ems")
             if ems_opt == None:
                 ems_opt = ems
             if ems.x < ems_opt.x or \
