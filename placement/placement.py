@@ -1,14 +1,34 @@
 import itertools
+from copy import deepcopy
 from math import ceil
 
 from placement.difference_process import difference_process
 from placement.objects.EmptyMaximumSpace import EmptyMaximumSpace
 from placement.back_bottom_left import back_bottom_left
 
+palette = EmptyMaximumSpace(0, 0, 0, 1200, 800, 1500)
+
+
+def difference_process_wrapper(empty_maximal_spaces, layer):
+    new_emss = []
+    emss_to_remove = []  # Changing a list while iterating over it does not work in python
+    for ems in empty_maximal_spaces:
+        if layer.in_ems(ems):
+            layer_tmp = ems.crop_layer(layer)  # A layer object that is cropped to the current ems used
+            if not layer_tmp.is_thin():
+                new_emss = new_emss + difference_process(layer_tmp, ems)
+                emss_to_remove.append(ems)
+    # Removing empty maximal spaces that have been divided by the new placed layer
+    for ems in emss_to_remove:
+        if ems in empty_maximal_spaces:
+            empty_maximal_spaces.remove(ems)
+    # Merging the new spaces with our old empty_maximal_spaces
+    return remove_included(new_emss + empty_maximal_spaces)
+
 
 def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
     ITER = 0
-    empty_maximal_spaces = [EmptyMaximumSpace(0, 0, 0, 1200, 800, 1500)]  # Empty bin Maximal Space
+    empty_maximal_spaces = [palette]  # Empty bin Maximal Space
     layers = []
     while not_all_skipped(box_types):
         print("Iteration {}".format(ITER))
@@ -42,30 +62,30 @@ def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
             # update s
             print("-Update S")
             # emss = empty_maximal_spaces
-            new_emss = []
-            emss_to_remove = []  # Changing a list while iterating over it does not work in python
-            for ems in empty_maximal_spaces:
-                if layer.in_ems(ems):
-                    layer_tmp = ems.crop_layer(layer)  # A layer object that is cropped to the current ems used
-                    if not layer_tmp.is_thin():
-                        new_emss = new_emss + difference_process(layer_tmp, ems)
-                        emss_to_remove.append(ems)
-            # Removing empty maximal spaces that have been divided by the new placed layer
-            for ems in emss_to_remove:
-                if ems in empty_maximal_spaces:
-                    empty_maximal_spaces.remove(ems)
-            # Merging the new spaces with our old empty_maximal_spaces
-            empty_maximal_spaces = remove_included(new_emss + empty_maximal_spaces)
+            empty_maximal_spaces = difference_process_wrapper(empty_maximal_spaces, layer)
             if full_support:
-                for ems in empty_maximal_spaces:
-                    if ems.height == layer.urc()[2]:
-                        print("run max join")
-                        pass
-                        # ems = maxjoin(ems) TODo implement
-                pass
+                new_emss = maxjoin(layer, empty_maximal_spaces)
+                empty_maximal_spaces += new_emss
         print("-----")
     return layers
     # Apply Max Join procedure
+
+
+def maxjoin(layer, empty_maximal_spaces):
+    print("Maxjoin Begin----------------")
+    new_emss = []
+    emss_with_same_height = []
+    emss = [EmptyMaximumSpace(0, 0, 0, 1200, 800, 1500)]
+    for ems in empty_maximal_spaces:
+        if ems.llc[2] == layer.urc()[2]:
+            print("same height")
+            emss_with_same_height.append(deepcopy(ems))
+    for ems in emss_with_same_height:
+        emss = difference_process_wrapper(emss, ems)
+    print(emss)
+    print("Maxjoin End----------------")
+    return new_emss
+
 
 
 def not_all_skipped(box_types):
