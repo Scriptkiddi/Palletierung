@@ -21,20 +21,26 @@ top_textures = [
 ]
 
 colors = [
-    '#95bc22',
-    '#43ac52',
-    '#009671',
-    '#007d7e',
-    '#006274',
-    '#2f4858',
-    '#747f4b',
-    '#edf5ce',
-    '#005253',
-    '#bffcfb',
-    '#00cde9',
-    '#68edcb',
-    '#f29367',
-    '#b65f36'
+    '#95BC22',
+    '#D2F276',
+    '#AED246',
+    '#75990F',
+    '#557200',
+    '#44A91F',
+    '#88DA6A',
+    '#61BD3F',
+    '#2F890D',
+    '#1C6700',
+    '#BB223A',
+    '#F17589',
+    '#D1465C',
+    '#980F24',
+    '#720012',
+    '#941B72',
+    '#BE5DA3',
+    '#A53787',
+    '#780C5A',
+    '#5A0041',
 ]
 
 
@@ -43,8 +49,8 @@ class Box3DDraw(BoxDraw):
         self.box = box
         color_id = int(hashlib.sha256(box.get_type().identifier.encode('utf-8')).hexdigest(), 16) % 10 * 1
         color = colors[color_id % len(colors)]
-        #top_texture = top_textures[color_id % len(top_textures)]
-        #side_texture = side_textures[color_id % len(side_textures)]
+        # top_texture = top_textures[color_id % len(top_textures)]
+        # side_texture = side_textures[color_id % len(side_textures)]
 
         self.top = self.get_tex(color)
         self.side = self.get_tex(color)

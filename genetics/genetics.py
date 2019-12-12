@@ -85,7 +85,7 @@ def run_genetics(boxes_to_pack, box_types):
     toolbox.register("mutate", mutSet)
 
     NGEN = 10
-    MU = 20 * len(boxes_to_pack)
+    MU = 50 # * len(boxes_to_pack)
     LAMBDA = 100
     CXPB = 0.7
     MUTPB = 0.2
