@@ -13,6 +13,8 @@ class Layer(Cube):
         self.direction = direction
         super(Layer, self).__init__(x1, y1, z1, width, depth, height)
 
+    def get_type(self):
+        return self.box_type
 
     def place(self, x, y, z):
         self.x = x

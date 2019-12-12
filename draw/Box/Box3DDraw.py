@@ -1,15 +1,54 @@
 import pyglet
+import hashlib
 from pyglet.gl import GL_QUADS
 
 from draw.Box.BoxDraw import BoxDraw
+
+side_textures = [
+    'resources/textures/side.png',
+    'resources/textures/crate.jpg',
+    'resources/textures/supermarket1.jpg',
+    'resources/textures/wine1.jpg',
+    'resources/textures/wine2.png',
+    'resources/textures/wine3.jpeg',
+    'resources/textures/wood.jpeg',
+]
+
+top_textures = [
+    'resources/textures/pappe1.jpg',
+    'resources/textures/pappe2.png',
+    'resources/textures/karton.png',
+]
+
+colors = [
+    '#95bc22',
+    '#43ac52',
+    '#009671',
+    '#007d7e',
+    '#006274',
+    '#2f4858',
+    '#747f4b',
+    '#edf5ce',
+    '#005253',
+    '#bffcfb',
+    '#00cde9',
+    '#68edcb',
+    '#f29367',
+    '#b65f36'
+]
 
 
 class Box3DDraw(BoxDraw):
     def __init__(self, box):
         self.box = box
-        self.top = self.get_tex('resources/textures/grass_top.png')
-        self.side = self.get_tex('resources/textures/side.png')
-        self.bottom = self.get_tex('resources/textures/dirt.png')
+        color_id = int(hashlib.sha256(box.get_type().identifier.encode('utf-8')).hexdigest(), 16) % 10 * 1
+        color = colors[color_id % len(colors)]
+        #top_texture = top_textures[color_id % len(top_textures)]
+        #side_texture = side_textures[color_id % len(side_textures)]
+
+        self.top = self.get_tex(color)
+        self.side = self.get_tex(color)
+        self.bottom = self.get_tex(color)
 
         self.batch = pyglet.graphics.Batch()
 

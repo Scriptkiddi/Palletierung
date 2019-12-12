@@ -7,9 +7,9 @@ from draw.Box.BoxDraw import BoxDraw
 class Palette(BoxDraw):
 
     def __init__(self):
-        self.top = self.get_tex('resources/textures/wood.jpeg')
-        self.side = self.get_tex('resources/textures/wood.jpeg')
-        self.bottom = self.get_tex('resources/textures/wood.jpeg')
+        self.top = self.get_tex('#000000', 'resources/textures/wood.jpeg')
+        self.side = self.get_tex('#000000', 'resources/textures/wood.jpeg')
+        self.bottom = self.get_tex('#000000', 'resources/textures/wood.jpeg')
 
         self.batch = pyglet.graphics.Batch()
 
@@ -24,4 +24,3 @@ class Palette(BoxDraw):
         self.batch.add(4, GL_QUADS, self.top, ('v3f', (x, Y, Z, X, Y, Z, X, Y, z, x, Y, z,)), tex_coords)
         self.batch.add(4, GL_QUADS, self.side, ('v3f', (X, y, z, x, y, z, x, Y, z, X, Y, z,)), tex_coords)
         self.batch.add(4, GL_QUADS, self.side, ('v3f', (x, y, Z, X, y, Z, X, Y, Z, x, Y, Z,)), tex_coords)
-

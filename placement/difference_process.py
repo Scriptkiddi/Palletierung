@@ -3,6 +3,7 @@ from copy import deepcopy
 
 from placement.objects.EmptyMaximumSpace import EmptyMaximumSpace
 
+
 def difference_process(layer, space):
     x3, y3, z3 = layer.llc()
     x4, y4, z4 = layer.urc()
@@ -24,7 +25,7 @@ def difference_process(layer, space):
 
     # Taken from "Developing a simulated annealing algorithm for the cutting stock problem" K.K.LaiJimmy W.M.Chan 1997
     # Get bottom left corner of our space and upper right corner
-    #print("Intervals before Removal: {}".format(intervals))
+    # print("Intervals before Removal: {}".format(intervals))
 
     # Removing intervals that are inside another interval
     intervals_to_remove = []
@@ -42,7 +43,7 @@ def difference_process(layer, space):
         x1, y1, z1 = interval.llc()
         x2, y2, z2 = interval.urc()
         if x1 == x2 or y1 == y2 or z1 == z2:
-            #print("Removing because its thin: {}".format(interval))
+            # print("Removing because its thin: {}".format(interval))
             intervals_to_remove.append(interval)
 
     for interval in intervals_to_remove:
@@ -51,7 +52,7 @@ def difference_process(layer, space):
 
     # Removing out of bound intervals
     # keept for debugging
-    #for interval in intervals:
+    # for interval in intervals:
     #    x2, y2, z2 = interval.urc()
     #    if x2 > 1200 or y2 > 800 or z2 > 1500:
     #        # print("removing because boundary")

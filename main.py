@@ -1,48 +1,16 @@
 import random
 import csv
-
+import timeit
 import pyglet
 from pyglet.gl import glClearColor, GL_DEPTH_TEST, glEnable
 
+from genetics.genetics import run_genetics
 from placement.objects.Box import Box
 
 from draw.Window.Window2D import Window2D
 from draw.Window.Window3D import Window3D
 from placement.objects.BoxType import BoxType
 from placement.placement import placement
-
-IND_INIT_SIZE = 5
-MAX_ITEM = 50
-MAX_WEIGHT = 50
-NBR_ITEMS = 20
-
-# To assure reproductibility, the RNG seed is set prior to the items
-# dict initialization. It is also seeded in main().
-random.seed(64)
-
-
-# Creating Fitness Class, and set the Objective to maximize
-# creator.create("Fitness", base.Fitness, weights=(1.0,))
-# creator.create("Individual", list, fitness=creator.Fitness)
-# IND_SIZE=10
-#
-# toolbox = base.Toolbox()
-# toolbox.register("attr_float", random.uniform(0, 1))
-# toolbox.register("individual", tools.initRepeat, creator.Individual,
-#                 toolbox.attr_float, n=IND_SIZE)
-
-
-# toolbox = base.Toolbox()
-#
-## Attribute generator
-# toolbox.register("attr_item", random.randrange, NBR_ITEMS)
-#
-## Structure initializers
-# toolbox.register("individual", tools.initRepeat, creator.Individual,
-#                 toolbox.attr_item, IND_INIT_SIZE)
-# toolbox.register("population", tools.initRepeat, list, toolbox.individual)
-
-
 
 
 def read_input(filename):
@@ -65,34 +33,33 @@ def read_input(filename):
                            rotate_yz=rotate_yz))
                 boxes_to_pack.append(box)
                 box_type.add_box(box)
-            box_types.append(box_type)
+
+            if int(row['Quantity']) > 0:
+                box_types.append(box_type)
         return boxes_to_pack, box_types
 
 
 if __name__ == "__main__":
-    # Reading in products and storing them into the item variable
+    start = timeit.default_timer()
     boxes_to_pack, box_types = read_input("resources/Maße_aldi.csv")
-    vector_layer_types = []
-    for i in boxes_to_pack:
-        vector_layer_types.append(random.random())
-    print("{} need to be packed".format(len(boxes_to_pack)))
-    boxes_packed = placement(boxes_to_pack, box_types, vector_layer_types)
-    #print(boxes_packed)
-    #assert (len(list(filter(lambda x: not x.packed, boxes_packed)))) == 0, "unpacked packages"
-    #exit(0)
-    # init empty palette
-    # emss = [Palette(0, 0, 0, 1200, 800, 1500)]  # Empty bin Maximal Space
-    ## items[0].place(opt_ems.x, opt_ems.y, opt_ems.z)
-    # for item in items:
-    #    opt_ems = bbl(item, emss)
-    #    item.place(opt_ems.x, opt_ems.y, opt_ems.z)
-    #    emss = remove_overlapping(opt_ems, emss)
-    #    new_emss = difference_process(item, opt_ems)
-    #    emss += new_emss
+    print(box_types)
+    pop, stats, hof = run_genetics(boxes_to_pack, box_types)
+    stop = timeit.default_timer()
+    print('Time: ', stop - start)
+    # TODO move this to a config file
     width = 1200
     depth = 800
     height = 1500
-    window3d = Window3D(boxes_packed, width, depth, height, width=854, height=480, caption='Palettierung', resizable=True)
+    random_keys = hof[0][0:len(boxes_to_pack)]
+    btps_unsorted = map(lambda x: (x, boxes_to_pack[random_keys.index(x)]), random_keys)
+    btps = sorted(btps_unsorted, key=lambda x: x[0])
+    boxes = list(map(lambda x: x[1], btps))
+
+    vector_layer_types = hof[0][len(box_types):]
+    print(boxes)
+    boxes_packed = placement(boxes, vector_layer_types)
+    window3d = Window3D(boxes_packed, width, depth, height, width=854, height=480, caption='Palettierung',
+                        resizable=True)
     glEnable(GL_DEPTH_TEST)
     glClearColor(0.5, 0.7, 1, 1)
     debug_2d = False

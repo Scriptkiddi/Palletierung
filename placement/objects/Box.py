@@ -30,8 +30,8 @@ class Box(Cube):
             if direction[0][0] >= direction[0][1] + direction[0][2] * (i + 1):
                 max_boxes_direction_1 = i + 1
         if max_boxes_direction_1 == 0:
-            print("Box {}".format(self))
-            print("EMS {}".format(ems))
+            #print("Box {}".format(self))
+            #print("EMS {}".format(ems))
             return None
         max_boxes_direction_2 = 0
         for i in range(0, floor(quantity / max_boxes_direction_1 - 1) + 1):
@@ -68,24 +68,24 @@ class Box(Cube):
         # This function only generates layers for rotation on x, y axis since the robot arm can not flip boxes
         # Extend this function as soon as this is required
         layers_with_quantity = []
-        layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                   [(ems.urc()[0], ems.x, self.width, "x"),
-                                                    (ems.urc()[2], ems.z, self.height, "z")]))
+        #layers_with_quantity.append(self.get_layer(ems, quantity,
+        #                                           [(ems.urc()[0], ems.x, self.width, "x"),
+        #                                            (ems.urc()[2], ems.z, self.height, "z")]))
         layers_with_quantity.append(self.get_layer(ems, quantity,
                                                    [(ems.urc()[0], ems.x, self.width, "x"),
                                                     (ems.urc()[1], ems.y, self.depth, "y")]))
-        layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                   [(ems.urc()[1], ems.y, self.depth, "y"),
-                                                    (ems.urc()[2], ems.z, self.height, "z")]))
+        #layers_with_quantity.append(self.get_layer(ems, quantity,
+        #                                           [(ems.urc()[1], ems.y, self.depth, "y"),
+        #                                            (ems.urc()[2], ems.z, self.height, "z")]))
         layers_with_quantity.append(self.get_layer(ems, quantity,
                                                    [(ems.urc()[1], ems.y, self.depth, "y"),
                                                     (ems.urc()[0], ems.x, self.width, "x")]))
-        layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                   [(ems.urc()[2], ems.z, self.height, "z"),
-                                                    (ems.urc()[0], ems.x, self.width, "x")]))
-        layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                   [(ems.urc()[2], ems.z, self.height, "z"),
-                                                    (ems.urc()[1], ems.y, self.depth, "y")]))
+        #layers_with_quantity.append(self.get_layer(ems, quantity,
+        #                                           [(ems.urc()[2], ems.z, self.height, "z"),
+        #                                            (ems.urc()[0], ems.x, self.width, "x")]))
+        #layers_with_quantity.append(self.get_layer(ems, quantity,
+        #                                           [(ems.urc()[2], ems.z, self.height, "z"),
+        #                                            (ems.urc()[1], ems.y, self.depth, "y")]))
         #if self.rotate[0]:
         #    # For this section width and depth are switched
         #    tmp_original_width = self.width

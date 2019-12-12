@@ -26,12 +26,14 @@ def difference_process_wrapper(empty_maximal_spaces, layer):
     return remove_included(new_emss + empty_maximal_spaces)
 
 
-def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
+def placement(boxes_to_pack, vector_layer_types, full_support=True):
+    #print("{} need to be packed".format(len(boxes_to_pack)))
     ITER = 0
     empty_maximal_spaces = [palette]  # Empty bin Maximal Space
     layers = []
+    box_types = map(lambda box: box.get_type(), boxes_to_pack)
     while not_all_skipped(box_types):
-        print("Iteration {}".format(ITER))
+        #print("Iteration {}".format(ITER))
         ITER += 1
         # print(len(list(filter(lambda x: x.skip, box_types))))
         i = 0
@@ -43,49 +45,58 @@ def placement(boxes_to_pack, box_types, vector_layer_types, full_support=True):
         box_type = box.get_type()
         ems = back_bottom_left(box, empty_maximal_spaces)
         if ems is None:
-            print("Cannot fit box {} of  {}".format(box, box_type))
+            #print("Cannot fit box {} of  {}".format(box, box_type))
             box.get_type().skip = True
         else:
-            print("Packing box {} of {}".format(box, box_type))
-            print("EMS: {}".format(ems))
-            print("-Generating Layers")
+            #print("Packing box {} of {}".format(box, box_type))
+            #print("EMS: {}".format(ems))
+            #print("-Generating Layers")
             layers_with_quantity = box.get_layers(ems, box_type.quantity())
             max_layers = len(layers_with_quantity)
             layer = layers_with_quantity[ceil(vector_layer_types[i] * max_layers) - 1]  # -1 because index offset
-            print("-Layer: {}, quant: {} {}-{}".format(layer, layer.quantity, layer.direction[0], layer.direction[1]))
-            print("-Placed {}/{} boxes of {}".format(layer.quantity, box_type.quantity(), box_type.identifier))
+            #print("-Layer: {}, quant: {} {}-{}".format(layer, layer.quantity, layer.direction[0], layer.direction[1]))
+            #print("-Placed {}/{} boxes of {}".format(layer.quantity, box_type.quantity(), box_type.identifier))
             box_type.update_quantity(box_type.quantity() - layer.quantity)
             assert box_type.quantity() >= 0
-            print("-Place Layer")
+            #print("-Place Layer")
             layer.place(ems.x, ems.y, ems.z)
             layers.append(layer)
             # update s
-            print("-Update S")
+            #print("-Update S")
             # emss = empty_maximal_spaces
             empty_maximal_spaces = difference_process_wrapper(empty_maximal_spaces, layer)
             if full_support:
-                new_emss = maxjoin(layer, empty_maximal_spaces)
-                empty_maximal_spaces += new_emss
-        print("-----")
+                empty_maximal_spaces = max_join(layer, empty_maximal_spaces)
+        #print("-----")
     return layers
     # Apply Max Join procedure
 
 
-def maxjoin(layer, empty_maximal_spaces):
-    print("Maxjoin Begin----------------")
-    new_emss = []
-    emss_with_same_height = []
-    emss = [EmptyMaximumSpace(0, 0, 0, 1200, 800, 1500)]
-    for ems in empty_maximal_spaces:
-        if ems.llc[2] == layer.urc()[2]:
-            print("same height")
-            emss_with_same_height.append(deepcopy(ems))
-    for ems in emss_with_same_height:
-        emss = difference_process_wrapper(emss, ems)
-    print(emss)
-    print("Maxjoin End----------------")
-    return new_emss
+def max_join(layer, empty_maximal_spaces):
+    """
+    This function implements the maxjoin procedure from http://mauricio.resende.info/doc/brkga-pack3d.pdf
 
+    :param layer: layer that was just placed
+    :param empty_maximal_spaces:  list of empty maximal spaces that resulted from placing said layer
+    :return: new list where spaces that have the same height are joined together
+    """
+    emss_with_same_height = []
+    for ems in empty_maximal_spaces:
+        if ems.llc()[2] == layer.urc()[2]:
+            emss_with_same_height.append(ems)
+    if len(emss_with_same_height) <= 1:
+        return empty_maximal_spaces
+    #print(emss_with_same_height)
+    emss_first_round = [EmptyMaximumSpace(0, 0, 0, 1200, 800, 1500)]
+    for ems in emss_with_same_height:
+        empty_maximal_spaces.remove(ems)
+        emss_first_round = difference_process_wrapper(emss_first_round, ems)
+    #print(emss_first_round)
+    emss_second_round = [EmptyMaximumSpace(0, 0, 0, 1200, 800, 1500)]
+    for ems in emss_first_round:
+        emss_second_round = difference_process_wrapper(emss_second_round, ems)
+    empty_maximal_spaces += emss_second_round
+    return empty_maximal_spaces
 
 
 def not_all_skipped(box_types):

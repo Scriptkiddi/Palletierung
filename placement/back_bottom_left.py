@@ -9,9 +9,9 @@ def back_bottom_left(box, empty_maximal_spaces):
             #print("box fits into ems")
             if ems_opt == None:
                 ems_opt = ems
-            if ems.x < ems_opt.x or \
-                    ems.x == ems_opt.x and ems.y < ems_opt.y or \
-                    ems.x == ems_opt.x and ems.y == ems_opt.y and ems.z < ems_opt.z:
+            if ems.z < ems_opt.z or \
+                    ems.z == ems_opt.z and ems.x < ems_opt.x or \
+                    ems.z == ems_opt.z and ems.x == ems_opt.x and ems.y < ems_opt.y:
                 #print("---EMS {}x{}x{}".format(ems.width, ems.depth, ems.height))
                 ems_opt = ems
 

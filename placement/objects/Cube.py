@@ -15,7 +15,7 @@ class Cube:
         return self.x + self.width, self.y + self.depth, self.z + self.height
 
     def place(self, x, y, z):
-        print("Placing at {}x{}x{}".format(x, y, z))
+        #print("Placing at {}x{}x{}".format(x, y, z))
         self.x = x
         self.y = y
         self.z = z
@@ -36,10 +36,10 @@ class Cube:
         x3, y3, z3 = self.llc()
         x4, y4, z4 = self.urc()
         if not (x2 < x3 or x1 > x4 or y2 < y3 or y1 > y4 or z2 < z3 or z1 > z4): # Intersecting volumes
-            print("Layer {} is part in EMS: {}".format(self, ems))
+            #print("Layer {} is part in EMS: {}".format(self, ems))
             return True
         elif x1 <= x3 and x4 <= x2 and y1 <= y3 and y4 <= y2 and z1 <= z3 and z4 <= z2: # surrounded volume
-            print("Layer {} is completly part in EMS: {}".format(self, ems))
+            #print("Layer {} is completly part in EMS: {}".format(self, ems))
             return True
         return False
 
@@ -47,6 +47,6 @@ class Cube:
         x1, y1, z1 = self.llc()
         x2, y2, z2 = self.urc()
         if x1 == x2 or y1 == y2 or z1 == z2:
-            print("Layer {} is thin".format(self))
+            #print("Layer {} is thin".format(self))
             return True
         return False
