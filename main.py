@@ -1,9 +1,11 @@
 import random
 import csv
 import timeit
+import os
 import pyglet
 from pyglet.gl import glClearColor, GL_DEPTH_TEST, glEnable
 
+from database import Result, db
 from genetics.genetics import run_genetics
 from placement.objects.Box import Box
 
@@ -11,6 +13,7 @@ from draw.Window.Window2D import Window2D
 from draw.Window.Window3D import Window3D
 from placement.objects.BoxType import BoxType
 from placement.placement import placement
+import configparser
 
 
 def read_input(filename):
@@ -26,6 +29,8 @@ def read_input(filename):
             rotate_xy = bool(row['RotateXY'])
             rotate_xz = bool(row['RotateXZ'])
             rotate_yz = bool(row['RotateYZ'])
+            rotate_xz = False
+            rotate_yz = False
             box_type = BoxType(type_id)
             weight = 5
             for i in range(0, int(row['Quantity'])):
@@ -39,41 +44,84 @@ def read_input(filename):
         return boxes_to_pack, box_types
 
 
+def save_results(test_name, start_time, end_time, population_size, number_of_generations, pop, stats):
+    record = stats.compile(pop)
+    print(record)
+    fitness_max = record['max']
+    fitness_min = record['min']
+    fitness_avg = record['avg']
+    Result.create(test_name=test_name, start_time=start_time, end_time=end_time,
+                  number_of_generations=number_of_generations, population_size=population_size,
+                  max_fitness=fitness_max, min_fitness=fitness_min, average_fitness=fitness_avg)
+
+
+def run_tests():
+    db.connect()
+    db.create_tables([Result])
+
+    config = configparser.ConfigParser()
+    config.read("config.ini")
+    number_of_generations = int(config["genetics"]["number_of_generations"])
+
+    test_file_paths = []
+
+    for file in os.listdir("resources/tests/umpalettierung"):
+        if file.endswith(".csv"):
+            test_file_paths.append(os.path.join("resources/tests/umpalettierung", file))
+
+    for path in test_file_paths:
+        start = timeit.default_timer()
+        boxes_to_pack, box_types = read_input(path)
+        size_of_population = int(config["genetics"]["population_multiplier"]) * len(boxes_to_pack)
+        test_name_list = []
+        for box_type in box_types:
+            test_name_list.append(f"{box_type.identifier[:5]}_{box_type.quantity()}")
+        test_name_list.sort()
+        test_name = '.'.join(test_name_list)
+        print(f"Running {test_name} with {number_of_generations} generations with a population size of {size_of_population}")
+        print(box_types)
+        pop, stats, hof = run_genetics(boxes_to_pack, box_types, number_of_generations, size_of_population)
+        stop = timeit.default_timer()
+        save_results(test_name, start, stop, len(pop), number_of_generations, pop, stats)
+
+
 if __name__ == "__main__":
-    start = timeit.default_timer()
-    boxes_to_pack, box_types = read_input("resources/Maße_aldi.csv")
-    print(box_types)
-    pop, stats, hof = run_genetics(boxes_to_pack, box_types)
-    stop = timeit.default_timer()
-    print('Time: ', stop - start)
-    # TODO move this to a config file
-    width = 1200
-    depth = 800
-    height = 1500
-    random_keys = hof[0][0:len(boxes_to_pack)]
-    btps_unsorted = map(lambda x: (x, boxes_to_pack[random_keys.index(x)]), random_keys)
-    btps = sorted(btps_unsorted, key=lambda x: x[0])
-    boxes = list(map(lambda x: x[1], btps))
+    run_tests()
+    # start = timeit.default_timer()
+    # boxes_to_pack, box_types = read_input("resources/tests/umpalettierung/umpalettierung1.csv")
+    # print(box_types)
+    # NGEN = 100
+    # pop, stats, hof = run_genetics(boxes_to_pack, box_types, NGEN)
+    # stop = timeit.default_timer()
+    # print('Time: ', stop - start)
+    ## TODO move this to a config file
+    # width = 1200
+    # depth = 800
+    # height = 1500
+    # random_keys = hof[0][0:len(boxes_to_pack)]
+    # btps_unsorted = map(lambda x: (x, boxes_to_pack[random_keys.index(x)]), random_keys)
+    # btps = sorted(btps_unsorted, key=lambda x: x[0])
+    # boxes = list(map(lambda x: x[1], btps))
 
-    vector_layer_types = hof[0][len(box_types):]
-    print(boxes)
-    boxes_packed = placement(boxes, vector_layer_types)
-    window3d = Window3D(boxes_packed, width, depth, height, width=854, height=480, caption='Palettierung',
-                        resizable=True)
-    glEnable(GL_DEPTH_TEST)
-    glClearColor(0.5, 0.7, 1, 1)
-    debug_2d = False
-    if debug_2d:
-        windowXY = Window2D(boxes_packed, width, depth, height, True, True, False, width=854, height=480, caption='XY',
-                            resizable=True)
-        glClearColor(0.5, 0.7, 1, 1)
-        windowXZ = Window2D(boxes_packed, width, depth, height, True, False, True, width=854, height=480, caption='XZ',
-                            resizable=True)
-        glClearColor(0.5, 0.7, 1, 1)
-        windowYZ = Window2D(boxes_packed, width, depth, height, False, True, True, width=854, height=480, caption='YZ',
-                            resizable=True)
-        glClearColor(0.5, 0.7, 1, 1)
-    pyglet.app.run()
+    # vector_layer_types = hof[0][len(box_types):]
+    # print(boxes)
+    # boxes_packed, emss = placement(boxes, vector_layer_types, debug=True)
+    # window3d = Window3D(boxes_packed, width, depth, height, width=854, height=480, caption='Palettierung',
+    #                    resizable=True)
+    # glEnable(GL_DEPTH_TEST)
+    # glClearColor(0.5, 0.7, 1, 1)
+    # debug_2d = False
+    # if debug_2d:
+    #    windowXY = Window2D(boxes_packed, width, depth, height, True, True, False, width=854, height=480, caption='XY',
+    #                        resizable=True)
+    #    glClearColor(0.5, 0.7, 1, 1)
+    #    windowXZ = Window2D(boxes_packed, width, depth, height, True, False, True, width=854, height=480, caption='XZ',
+    #                        resizable=True)
+    #    glClearColor(0.5, 0.7, 1, 1)
+    #    windowYZ = Window2D(boxes_packed, width, depth, height, False, True, True, width=854, height=480, caption='YZ',
+    #                        resizable=True)
+    #    glClearColor(0.5, 0.7, 1, 1)
+    # pyglet.app.run()
 
-    # emss = difference_process(items[0], palette)
-    # print(emss)
+    ## emss = difference_process(items[0], palette)
+    ## print(emss)

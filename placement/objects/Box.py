@@ -23,15 +23,14 @@ class Box(Cube):
     def get_type(self):
         return self.box_type
 
-
     def get_layer(self, ems, quantity, direction):
         max_boxes_direction_1 = 0
         for i in range(0, quantity):
             if direction[0][0] >= direction[0][1] + direction[0][2] * (i + 1):
                 max_boxes_direction_1 = i + 1
         if max_boxes_direction_1 == 0:
-            #print("Box {}".format(self))
-            #print("EMS {}".format(ems))
+            # print("Box {}".format(self))
+            # print("EMS {}".format(ems))
             return None
         max_boxes_direction_2 = 0
         for i in range(0, floor(quantity / max_boxes_direction_1 - 1) + 1):
@@ -45,6 +44,8 @@ class Box(Cube):
         if max_boxes > quantity:
             max_boxes = quantity - (quantity % max_boxes_direction_1)
 
+        # print("EMS {}".format(ems))
+        # print("width {}, depth {}".format(self.width, self.depth))
         layer = Layer(ems.x, ems.y, ems.z, self.width, self.depth,
                       self.height, self.get_type(), max_boxes,
                       ((direction[0][3], max_boxes_direction_1), (direction[1][3], max_boxes_direction_2)))
@@ -70,13 +71,13 @@ class Box(Cube):
         layers_with_quantity = []
         layers_with_quantity.append(self.get_layer(ems, quantity,
                                                    [(ems.urc()[0], ems.x, self.width, "x"),
-                                                    (ems.urc()[2], ems.z, self.height, "z")]))
-        layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                   [(ems.urc()[0], ems.x, self.width, "x"),
                                                     (ems.urc()[1], ems.y, self.depth, "y")]))
-        layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                   [(ems.urc()[1], ems.y, self.depth, "y"),
-                                                    (ems.urc()[2], ems.z, self.height, "z")]))
+        #layers_with_quantity.append(self.get_layer(ems, quantity,
+        #                                           [(ems.urc()[0], ems.x, self.width, "x"),
+        #                                            (ems.urc()[2], ems.z, self.height, "z")]))
+        #layers_with_quantity.append(self.get_layer(ems, quantity,
+        #                                           [(ems.urc()[1], ems.y, self.depth, "y"),
+        #                                            (ems.urc()[2], ems.z, self.height, "z")]))
         layers_with_quantity.append(self.get_layer(ems, quantity,
                                                    [(ems.urc()[1], ems.y, self.depth, "y"),
                                                     (ems.urc()[0], ems.x, self.width, "x")]))
@@ -87,44 +88,49 @@ class Box(Cube):
         #                                           [(ems.urc()[2], ems.z, self.height, "z"),
         #                                            (ems.urc()[1], ems.y, self.depth, "y")]))
         if self.rotate[0]:
-            # For this section width and depth are switched
+            #    # For this section width and depth are switched
+            # print("A")
+            # print(self.width)
+            # print(self.depth)
             tmp_original_width = self.width
             tmp_original_depth = self.depth
             self.width = tmp_original_depth
             self.depth = tmp_original_width
-            layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                       [(ems.urc()[0], ems.x, self.width, "x"),
-                                                        (ems.urc()[2], ems.z, self.height, "z")]))
-            layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                       [(ems.urc()[0], ems.x, self.width, "x"),
-                                                        (ems.urc()[1], ems.y, self.depth, "y")]))
-            layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                       [(ems.urc()[1], ems.y, self.depth, "y"),
-                                                        (ems.urc()[2], ems.z, self.height, "z")]))
-            layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                       [(ems.urc()[1], ems.y, self.depth, "y"),
-                                                        (ems.urc()[0], ems.x, self.width, "x")]))
-            layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                       [(ems.urc()[2], ems.z, self.height, "z"),
-                                                        (ems.urc()[0], ems.x, self.width, "x")]))
-            layers_with_quantity.append(self.get_layer(ems, quantity,
-                                                       [(ems.urc()[2], ems.z, self.height, "z"),
-                                                        (ems.urc()[1], ems.y, self.depth, "y")]))
-            self.width = tmp_original_width
-            self.depth = tmp_original_depth
+            if ems.width >= self.width and ems.depth >= self.depth and ems.height >= self.height:
+                layers_with_quantity.append(self.get_layer(ems, quantity,
+                                                           [(ems.urc()[0], ems.x, self.width, "x"),
+                                                            (ems.urc()[1], ems.y, self.depth, "y")]))
+                #layers_with_quantity.append(self.get_layer(ems, quantity,
+                #                                           [(ems.urc()[0], ems.x, self.width, "x"),
+                #                                            (ems.urc()[2], ems.z, self.height, "z")]))
+                #layers_with_quantity.append(self.get_layer(ems, quantity,
+                #                                           [(ems.urc()[1], ems.y, self.depth, "y"),
+                #                                            (ems.urc()[2], ems.z, self.height, "z")]))
+                layers_with_quantity.append(self.get_layer(ems, quantity,
+                                                           [(ems.urc()[1], ems.y, self.depth, "y"),
+                                                            (ems.urc()[0], ems.x, self.width, "x")]))
+                #layers_with_quantity.append(self.get_layer(ems, quantity,
+                #                                           [(ems.urc()[2], ems.z, self.height, "z"),
+                #                                            (ems.urc()[0], ems.x, self.width, "x")]))
+                #layers_with_quantity.append(self.get_layer(ems, quantity,
+                #                                           [(ems.urc()[2], ems.z, self.height, "z"),
+                #                                            (ems.urc()[1], ems.y, self.depth, "y")]))
+                self.width = tmp_original_width
+                self.depth = tmp_original_depth
 
-        #elif self.rotate[1] or self.rotate[2]:
-        #    # this code should never be reached since we can not rotate our boxes this way
-        #    assert False
+            elif self.rotate[1] or self.rotate[2]:
+                print(self.rotate)
+                # this code should never be reached since we can not rotate our boxes this way
+                assert False
 
-        layers_to_remove = []
-        for x in layers_with_quantity:
-            if x is None:
-                layers_to_remove.append(x)
-        for x in layers_to_remove:
-            layers_with_quantity.remove(x)
-            #print("removing")
-        #print(layers_with_quantity)
+            layers_to_remove = []
+            for x in layers_with_quantity:
+                if x is None:
+                    layers_to_remove.append(x)
+            for x in layers_to_remove:
+                layers_with_quantity.remove(x)
+                # print("removing")
+                # print(layers_with_quantity)
         return layers_with_quantity
 
     # Palette(ems.x, ems.y, ems.z, ems.x, self.width, self.height),
@@ -149,7 +155,7 @@ class Box(Cube):
         return self.type_id
 
     def place(self, x, y, z):
-        #print("placing at {}x{}x{}".format(x, y, z))
+        # print("placing at {}x{}x{}".format(x, y, z))
         self.x = x
         self.y = y
         self.z = z
