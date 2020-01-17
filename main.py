@@ -46,13 +46,19 @@ def read_input(filename):
 
 def save_results(test_name, start_time, end_time, population_size, number_of_generations, pop, stats):
     record = stats.compile(pop)
+    config = configparser.ConfigParser()
+    config.read("config.ini")
+    palette_width = int(config["palette"]["width"])
+    palette_depth = int(config["palette"]["depth"])
+    palette_height = int(config["palette"]["height"])
     print(record)
     fitness_max = record['max']
     fitness_min = record['min']
     fitness_avg = record['avg']
     Result.create(test_name=test_name, start_time=start_time, end_time=end_time,
                   number_of_generations=number_of_generations, population_size=population_size,
-                  max_fitness=fitness_max, min_fitness=fitness_min, average_fitness=fitness_avg)
+                  max_fitness=fitness_max, min_fitness=fitness_min, average_fitness=fitness_avg,
+                  palette_width=palette_width, palette_height=palette_height, palette_depth=palette_depth)
 
 
 def run_tests():
@@ -94,7 +100,6 @@ if __name__ == "__main__":
     # pop, stats, hof = run_genetics(boxes_to_pack, box_types, NGEN)
     # stop = timeit.default_timer()
     # print('Time: ', stop - start)
-    ## TODO move this to a config file
     # width = 1200
     # depth = 800
     # height = 1500

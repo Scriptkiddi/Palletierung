@@ -34,7 +34,7 @@ def difference_process_wrapper(empty_maximal_spaces, layer):
 
 
 def placement(boxes_to_pack, vector_layer_types, debug=False, full_support=True):
-    #print("{} need to be packed".format(len(boxes_to_pack)))
+    # print("{} need to be packed".format(len(boxes_to_pack)))
     ITER = 0
     empty_maximal_spaces = [deepcopy(palette)]  # Empty bin Maximal Space
     layers = []
@@ -50,6 +50,9 @@ def placement(boxes_to_pack, vector_layer_types, debug=False, full_support=True)
                 i = j
         box = boxes_to_pack[i]
         box_type = box.get_type()
+        # TODO add a way to add and later remove ems spaces to build over empty spaces if its possible
+        #
+        empty_maximal_spaces, original_empty_maximal_spaces = max_product_join(box_type, empty_maximal_spaces)
         ems = back_bottom_left(box, empty_maximal_spaces)
         if ems is None:
             if debug:
@@ -64,7 +67,8 @@ def placement(boxes_to_pack, vector_layer_types, debug=False, full_support=True)
             max_layers = len(layers_with_quantity)
             layer = layers_with_quantity[ceil(vector_layer_types[i] * max_layers) - 1]  # -1 because index offset
             if debug:
-                print("-Layer: {}, quant: {} {}-{}".format(layer, layer.quantity, layer.direction[0], layer.direction[1]))
+                print(
+                    "-Layer: {}, quant: {} {}-{}".format(layer, layer.quantity, layer.direction[0], layer.direction[1]))
                 print("-Placed {}/{} boxes of {}".format(layer.quantity, box_type.quantity(), box_type.identifier))
             box_type.update_quantity(box_type.quantity() - layer.quantity)
             assert box_type.quantity() >= 0
@@ -99,12 +103,58 @@ def max_join(layer, empty_maximal_spaces):
             emss_with_same_height.append(ems)
     if len(emss_with_same_height) <= 1:
         return empty_maximal_spaces
-    #print(emss_with_same_height)
+    # print(emss_with_same_height)
     emss_first_round = [deepcopy(palette)]
     for ems in emss_with_same_height:
         empty_maximal_spaces.remove(ems)
         emss_first_round = difference_process_wrapper(emss_first_round, ems)
-    #print(emss_first_round)
+    # print(emss_first_round)
+    emss_second_round = [deepcopy(palette)]
+    for ems in emss_first_round:
+        emss_second_round = difference_process_wrapper(emss_second_round, ems)
+    empty_maximal_spaces += emss_second_round
+    return empty_maximal_spaces
+
+
+def max_product_join(box_type, empty_maximal_spaces):
+    """
+    This function implements a derivation of the maxjoin procedure from http://mauricio.resende.info/doc/brkga-pack3d.pdf
+    It also merges empty spaces that can be briged by the given box_type
+
+    :param layer: layer that was just placed
+    :param empty_maximal_spaces:  list of empty maximal spaces that resulted from placing said layer
+    :return: new list where spaces that have the same height are joined together
+    """
+
+    # TODO split ems into same height
+    original_empty_maximal_spaces = deepcopy(empty_maximal_spaces)
+    emss_sorted_by_same_height = []
+    for ems in empty_maximal_spaces:
+        if emss_sorted_by_same_height[ems.llc()[2]] is None:
+            emss_sorted_by_same_height[ems.llc()[2]] = [ems]
+        else:
+            emss_sorted_by_same_height[ems.llc()[2]].append(ems)
+    emss_sorted_by_same_height[:] = [x for x in emss_sorted_by_same_height if not len(x) > 1]
+
+    # todo add distance function for ems to calculate distance in a direction between two ems
+    # todo if distance is smaller than our box length in that direction merge
+    # todo carfule if 3 in a row how is the handling done merge solution sort acending from point 0 to start comparison
+    # todo merge first 2 and then continue
+
+
+
+
+    for ems in empty_maximal_spaces:
+        if ems.llc()[2] == layer.urc()[2]:
+            emss_with_same_height.append(ems)
+    if len(emss_with_same_height) <= 1:
+        return empty_maximal_spaces
+    # print(emss_with_same_height)
+    emss_first_round = [deepcopy(palette)]
+    for ems in emss_with_same_height:
+        empty_maximal_spaces.remove(ems)
+        emss_first_round = difference_process_wrapper(emss_first_round, ems)
+    # print(emss_first_round)
     emss_second_round = [deepcopy(palette)]
     for ems in emss_first_round:
         emss_second_round = difference_process_wrapper(emss_second_round, ems)

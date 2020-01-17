@@ -10,6 +10,9 @@ class BaseModel(Model):
 
 class Result(BaseModel):
     test_name = CharField()
+    palette_width = IntegerField()
+    palette_depth = IntegerField()
+    palette_height = IntegerField()
     start_time = DateTimeField()
     end_time = DateTimeField()
     population_size = IntegerField()
