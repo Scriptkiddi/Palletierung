@@ -52,7 +52,7 @@ def placement(boxes_to_pack, vector_layer_types, debug=False, full_support=True)
         box_type = box.get_type()
         # TODO add a way to add and later remove ems spaces to build over empty spaces if its possible
         #
-        empty_maximal_spaces, original_empty_maximal_spaces = max_product_join(box_type, empty_maximal_spaces)
+        #empty_maximal_spaces, original_empty_maximal_spaces = max_product_join(box_type, empty_maximal_spaces)
         ems = back_bottom_left(box, empty_maximal_spaces)
         if ems is None:
             if debug:

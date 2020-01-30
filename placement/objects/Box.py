@@ -6,12 +6,13 @@ from placement.objects.Layer import Layer
 
 
 class Box(Cube):
-    def __init__(self, width, depth, height, type_id, box_type, x=None, y=None, z=None, rotate_xy=False,
+    def __init__(self, width, depth, height, type_id, box_type, weight, x=None, y=None, z=None, rotate_xy=False,
                  rotate_xz=False, rotate_yz=False):
         self.x = x
         self.y = y
         self.z = z
         self.box_type = box_type
+        self.weight = weight
         self.width = width
         self.depth = depth
         self.height = height

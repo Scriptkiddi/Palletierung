@@ -20,6 +20,7 @@ config.read("config.ini")
 palette_width = int(config["palette"]["width"])
 palette_depth = int(config["palette"]["depth"])
 palette_height = int(config["palette"]["height"])
+palette_max_weight = int(config["palette"]["weight"])
 CXPB = float(config["genetics"]["CXPB"])
 MUTPB = float(config["genetics"]["MUTPB"])
 MUTGPB = float(config["genetics"]["MUTGPB"])
@@ -61,9 +62,14 @@ def eval_palette(individual, boxes):
     #for ems in emss:
     #    small_ems_penalty += (1200 * 1500 * 800) / (ems.height * ems.width * ems.depth)
 
+    palette_weight = 0
     for layer in boxes_packed:
         #    number_of_boxes_packed += layer.quantity
         volume_used += layer.width * layer.height * layer.depth
+        palette_weight = layer.quantity*layer.boxes[0].weight
+    overloaded = 0
+    if palette_weight > palette_max_weight:
+        overloaded = -999999999999999999999
     #    # maximal_height += layer.urc()[2]
     #    if maximal_height < layer.urc()[2]:
     #        maximal_height = layer.urc()[2]
@@ -78,7 +84,7 @@ def eval_palette(individual, boxes):
     # benchmark mit loggen aber nur volumen in die fitness funktion packen
     # benchmakr gegen frauenhofer api
 
-    fitness = volume_ratio  # - 100 * small_ems_penalty  # - len(boxes_packed)*10
+    fitness = volume_ratio + overloaded  # - 100 * small_ems_penalty  # - len(boxes_packed)*10
     # fitness = number_of_boxes_packed * 10000 - maximal_height * 1000 + 500 * volume_ratio - 100 * small_ems_penalty  # - len(boxes_packed)*10
 
     return fitness,

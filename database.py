@@ -13,6 +13,7 @@ class Result(BaseModel):
     palette_width = IntegerField()
     palette_depth = IntegerField()
     palette_height = IntegerField()
+    palette_max_weight = IntegerField()
     start_time = DateTimeField()
     end_time = DateTimeField()
     population_size = IntegerField()
