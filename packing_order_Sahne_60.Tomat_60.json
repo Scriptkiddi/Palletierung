@@ -1,0 +1,1322 @@
+[
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 760,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 760,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 855,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 855,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1045,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 1045,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1235,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 1235,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 1330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1425,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 200,
+        "z": 1425,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 230,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 230,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 230,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 460,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 460,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 460,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 112,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 207,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 302,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 397,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 492,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 587,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 682,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 777,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 872,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 967,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 1062,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 1157,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 1252,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 1347,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 0,
+        "z": 1442,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 112,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 112,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 112,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 224,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 224,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 224,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 336,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 336,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 336,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 448,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 448,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 448,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 560,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 560,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 560,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 672,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 672,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 672,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 784,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 784,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 784,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 896,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 896,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 896,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 1008,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 1008,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 1008,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 1120,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 1120,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 1120,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 1232,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 1232,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 1232,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 1344,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 1344,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 1344,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 200,
+        "y": 200,
+        "z": 1456,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 500,
+        "y": 200,
+        "z": 1456,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 800,
+        "y": 200,
+        "z": 1456,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 112,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 207,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 302,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 397,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 492,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 587,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 682,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 777,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 872,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 967,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 1062,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 1157,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 200,
+        "y": 430,
+        "z": 1252,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 112,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 224,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 336,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 448,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 560,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 672,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 784,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 896,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 1008,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 1120,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 1232,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Tomaten",
+        "x": 580,
+        "y": 430,
+        "z": 1344,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    }
+]

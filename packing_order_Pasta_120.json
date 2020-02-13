@@ -1,0 +1,332 @@
+[
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 0,
+        "z": 270,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 0,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 0,
+        "z": 810,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 0,
+        "z": 1080,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 240,
+        "z": 270,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 240,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 240,
+        "z": 810,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 240,
+        "z": 1080,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 480,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 480,
+        "z": 270,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 480,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 480,
+        "z": 810,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 480,
+        "z": 1080,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 0,
+        "z": 270,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 0,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 0,
+        "z": 810,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 0,
+        "z": 1080,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 240,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 240,
+        "z": 270,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 240,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 240,
+        "z": 810,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 240,
+        "z": 1080,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 480,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 480,
+        "z": 270,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 480,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 480,
+        "z": 810,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 550,
+        "y": 480,
+        "z": 1080,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    }
+]

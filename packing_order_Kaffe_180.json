@@ -1,0 +1,497 @@
+[
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 0,
+        "z": 165,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 0,
+        "z": 330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 0,
+        "z": 495,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 0,
+        "z": 660,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 0,
+        "z": 825,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 0,
+        "z": 990,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 0,
+        "z": 1155,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 0,
+        "z": 1320,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 415,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 415,
+        "z": 165,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 415,
+        "z": 330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 415,
+        "z": 495,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 415,
+        "z": 660,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 415,
+        "z": 825,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 415,
+        "z": 990,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 415,
+        "z": 1155,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 0,
+        "y": 415,
+        "z": 1320,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 415,
+        "y": 415,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 415,
+        "y": 415,
+        "z": 165,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 415,
+        "y": 415,
+        "z": 330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 415,
+        "y": 415,
+        "z": 495,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 415,
+        "y": 415,
+        "z": 660,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 415,
+        "y": 415,
+        "z": 825,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 415,
+        "y": 415,
+        "z": 990,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 415,
+        "y": 415,
+        "z": 1155,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 415,
+        "y": 415,
+        "z": 1320,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 315,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 315,
+        "y": 0,
+        "z": 165,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 315,
+        "y": 0,
+        "z": 330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 315,
+        "y": 0,
+        "z": 495,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 315,
+        "y": 0,
+        "z": 660,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 315,
+        "y": 0,
+        "z": 825,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 315,
+        "y": 0,
+        "z": 990,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 315,
+        "y": 0,
+        "z": 1155,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 315,
+        "y": 0,
+        "z": 1320,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 730,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 730,
+        "y": 0,
+        "z": 165,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 730,
+        "y": 0,
+        "z": 330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 730,
+        "y": 0,
+        "z": 495,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 730,
+        "y": 0,
+        "z": 660,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 730,
+        "y": 0,
+        "z": 825,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 730,
+        "y": 0,
+        "z": 990,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 730,
+        "y": 0,
+        "z": 1155,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaffee",
+        "x": 730,
+        "y": 0,
+        "z": 1320,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    }
+]

@@ -1,0 +1,1157 @@
+[
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 160,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 160,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 160,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 160,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 160,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 160,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 160,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 320,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 320,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 320,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 320,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 320,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 320,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 320,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 0,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 0,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 0,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 0,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 0,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 0,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 0,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 160,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 160,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 160,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 160,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 160,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 160,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 160,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 320,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 320,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 320,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 320,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 320,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 320,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 320,
+        "z": 310,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 0,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 0,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 0,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 0,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 0,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 0,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 0,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 160,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 160,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 160,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 160,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 160,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 160,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 160,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 320,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 320,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 320,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 320,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 320,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 320,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 320,
+        "z": 620,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 0,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 0,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 0,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 0,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 0,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 0,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 0,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 160,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 160,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 160,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 160,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 160,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 160,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 160,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 320,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 320,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 320,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 320,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 320,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 320,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 320,
+        "z": 930,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 0,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 0,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 0,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 0,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 0,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 0,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 0,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 160,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 160,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 160,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 160,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 160,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 160,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 160,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 0,
+        "y": 320,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 250,
+        "y": 320,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 500,
+        "y": 320,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 750,
+        "y": 320,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1000,
+        "y": 320,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1250,
+        "y": 320,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sekt",
+        "x": 1500,
+        "y": 320,
+        "z": 1240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    }
+]

@@ -5,6 +5,13 @@ from placement.objects.EmptyMaximumSpace import EmptyMaximumSpace
 
 
 def difference_process(layer, space):
+    """
+    Calculate empty spaces after placing layer in the given space.
+
+    :param layer:
+    :param space:
+    :return:
+    """
     x3, y3, z3 = layer.llc()
     x4, y4, z4 = layer.urc()
     intervals = []
@@ -18,8 +25,9 @@ def difference_process(layer, space):
         EmptyMaximumSpace(x4, y1, z1, x2, y2, z2),
         EmptyMaximumSpace(x1, y1, z1, x2, y3, z2),
         EmptyMaximumSpace(x1, y4, z1, x2, y2, z2),
-        EmptyMaximumSpace(x1, y1, z1, x4, y4, z3),  # this is always 0 if you are not placing thing into the air
-        EmptyMaximumSpace(x1, y1, z4, x4, y4, z2)
+        EmptyMaximumSpace(x1, y1, z1, x4, y4, z3),  # this is always 0 if you are not placing things into the air
+        EmptyMaximumSpace(x1, y1, z4, x2, y2, z2)
+        #EmptyMaximumSpace(x1, y1, z4, x4, y4, z2)
         # oder x1,y1,z4,x2,y2,z2 falls kein support von unten benötigt wird
     ]
 

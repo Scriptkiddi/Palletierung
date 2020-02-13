@@ -51,42 +51,20 @@ def eval_palette(individual, boxes):
     boxes_to_pack = [item for sublist in list(map(lambda x: x[1].boxes, btps)) for item in sublist]
 
     vector_layer_types = individual[len(box_types):]
-    # future = futures.submit(placement, boxes_to_pack, vector_layer_types)
-    # boxes_packed, emss = future.result()
     boxes_packed, emss = placement(boxes_to_pack, vector_layer_types)
-    # print(len(boxes_packed))
-    #number_of_boxes_packed = 0
-    #maximal_height = 0
     volume_used = 0
-    #small_ems_penalty = 0
-    #for ems in emss:
-    #    small_ems_penalty += (1200 * 1500 * 800) / (ems.height * ems.width * ems.depth)
 
     palette_weight = 0
     for layer in boxes_packed:
-        #    number_of_boxes_packed += layer.quantity
         volume_used += layer.width * layer.height * layer.depth
         palette_weight = layer.quantity*layer.boxes[0].weight
     overloaded = 0
     if palette_weight > palette_max_weight:
         overloaded = -999999999999999999999
-    #    # maximal_height += layer.urc()[2]
-    #    if maximal_height < layer.urc()[2]:
-    #        maximal_height = layer.urc()[2]
 
     volume_ratio = volume_used / (palette_width * palette_depth * palette_height)
-    # print("Volume of palette used {} ".format(volume_ratio))
 
-    # TODO
-    # abstand zwischen boxen minimieren
-    # anzahl der layer mit dazu geben sollte möglichst minimal sein
-    # Mutation mit kopieren der gen und dann sortieren, halbieren
-    # benchmark mit loggen aber nur volumen in die fitness funktion packen
-    # benchmakr gegen frauenhofer api
-
-    fitness = volume_ratio + overloaded  # - 100 * small_ems_penalty  # - len(boxes_packed)*10
-    # fitness = number_of_boxes_packed * 10000 - maximal_height * 1000 + 500 * volume_ratio - 100 * small_ems_penalty  # - len(boxes_packed)*10
-
+    fitness = volume_ratio + overloaded
     return fitness,
 
 
@@ -98,9 +76,16 @@ def mutate(ind):
 
 
 def run_genetics(boxes_to_pack, box_types, ngen, size_of_population):
-    # To assure reproductibility, the RNG seed is set prior to the items
-    # dict initialization. It is also seeded in main().
-    # random.seed(64)
+    """
+    Runs genetic process
+    can be stopped early by adjusting break std in the config
+
+    :param boxes_to_pack: list of boxes to pack
+    :param box_types: list of box types
+    :param ngen: number of generations
+    :param size_of_population: population size
+    :return: returns the final population
+    """
     IND_SIZE = len(box_types) + len(boxes_to_pack)
 
     # Creating Fitness Class, and set the Objective to maximize

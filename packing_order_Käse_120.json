@@ -1,0 +1,530 @@
+[
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 255,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 0,
+        "z": 200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 255,
+        "z": 200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 0,
+        "z": 400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 255,
+        "z": 400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 0,
+        "z": 600,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 255,
+        "z": 600,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 0,
+        "z": 800,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 255,
+        "z": 800,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 0,
+        "z": 1000,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 255,
+        "z": 1000,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 0,
+        "z": 1200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 255,
+        "z": 1200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 0,
+        "z": 1400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 0,
+        "y": 255,
+        "z": 1400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 255,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 0,
+        "z": 200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 255,
+        "z": 200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 0,
+        "z": 400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 255,
+        "z": 400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 0,
+        "z": 600,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 255,
+        "z": 600,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 0,
+        "z": 800,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 255,
+        "z": 800,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 0,
+        "z": 1000,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 255,
+        "z": 1000,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 0,
+        "z": 1200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 255,
+        "z": 1200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 0,
+        "z": 1400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 255,
+        "y": 255,
+        "z": 1400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 255,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 0,
+        "z": 200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 255,
+        "z": 200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 0,
+        "z": 400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 255,
+        "z": 400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 0,
+        "z": 600,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 255,
+        "z": 600,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 0,
+        "z": 800,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 255,
+        "z": 800,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 0,
+        "z": 1000,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 255,
+        "z": 1000,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 0,
+        "z": 1200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 255,
+        "z": 1200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 0,
+        "z": 1400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "K\u00e4se",
+        "x": 510,
+        "y": 255,
+        "z": 1400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    }
+]

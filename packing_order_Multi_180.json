@@ -1,0 +1,794 @@
+[
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 0,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 0,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 0,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 0,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 0,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 0,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 0,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 0,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 0,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 0,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 0,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 0,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 0,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 0,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 0,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 0,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 0,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 0,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 250,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 250,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 250,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 250,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 250,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 250,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 250,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 250,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 250,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 250,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 250,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 250,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 250,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 250,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 250,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 250,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 250,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 250,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 250,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 250,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 250,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 250,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 250,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 250,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 500,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 500,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 500,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 0,
+        "y": 500,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 500,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 500,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 500,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 250,
+        "y": 500,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 500,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 500,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 500,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 500,
+        "y": 500,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 500,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 500,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 500,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 750,
+        "y": 500,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 500,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 500,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 500,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1000,
+        "y": 500,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 500,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 500,
+        "z": 350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 500,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Multivitaminsaft",
+        "x": 1250,
+        "y": 500,
+        "z": 1050,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    }
+]

@@ -1,0 +1,1322 @@
+[
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 760,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 855,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1045,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1235,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 0,
+        "z": 1425,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 760,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 855,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 1045,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 1235,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 1330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 0,
+        "z": 1425,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 760,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 855,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 1045,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 1235,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 1330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 0,
+        "z": 1425,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 760,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 855,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 1045,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 1235,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 1330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1140,
+        "y": 0,
+        "z": 1425,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 760,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 855,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 1045,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 1235,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 1330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 1520,
+        "y": 0,
+        "z": 1425,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 760,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 855,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 1045,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 1235,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 1330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 0,
+        "y": 380,
+        "z": 1425,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 760,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 855,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 1045,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 1235,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 1330,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 380,
+        "y": 380,
+        "z": 1425,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 380,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 380,
+        "z": 95,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 380,
+        "z": 190,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 380,
+        "z": 285,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 380,
+        "z": 380,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 380,
+        "z": 475,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 380,
+        "z": 570,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Sahne",
+        "x": 760,
+        "y": 380,
+        "z": 665,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    }
+]

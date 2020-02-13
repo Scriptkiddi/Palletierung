@@ -9,9 +9,17 @@ class Cube:
         self.rotate = (rotate_xy, rotate_xz, rotate_yz)
 
     def llc(self):  # Lower Left Corner
+        """
+        returns lower left corner coords for this cube
+        :return:
+        """
         return self.x, self.y, self.z
 
     def urc(self):  # Upper Right Corner
+        """
+        return upper right corner coords for this cube
+        :return:
+        """
         return self.x + self.width, self.y + self.depth, self.z + self.height
 
     def place(self, x, y, z):

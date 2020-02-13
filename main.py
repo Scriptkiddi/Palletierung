@@ -18,6 +18,11 @@ import configparser
 
 
 def read_input(filename):
+    """
+    Reads a csv file as input to gather information what products are supposed to be packed onto the palette
+    :param filename: Filepath to the csv file
+    :return:
+    """
     boxes_to_pack = []
     box_types = []
     with open(filename) as csv_file:
@@ -30,6 +35,7 @@ def read_input(filename):
             rotate_xy = bool(row['RotateXY'])
             rotate_xz = bool(row['RotateXZ'])
             rotate_yz = bool(row['RotateYZ'])
+            # Disable rotation along z axis
             rotate_xz = False
             rotate_yz = False
 
@@ -47,6 +53,17 @@ def read_input(filename):
 
 
 def save_results(test_name, start_time, end_time, population_size, number_of_generations, pop, stats):
+    """
+    Saves results into a sqlite db for comparison later
+    :param test_name:
+    :param start_time:
+    :param end_time:
+    :param population_size:
+    :param number_of_generations:
+    :param pop:
+    :param stats:
+    :return:
+    """
     record = stats.compile(pop)
     config = configparser.ConfigParser()
     config.read("config.ini")
@@ -66,6 +83,14 @@ def save_results(test_name, start_time, end_time, population_size, number_of_gen
 
 
 def get_packed_boxes_from_ind(ind, boxes_to_pack, box_types):
+    """
+    Extract boxes packed from an individual used to get actual x,y,z coordinates
+
+    :param ind:
+    :param boxes_to_pack:
+    :param box_types:
+    :return:
+    """
     random_keys = ind[0:len(boxes_to_pack)]
     btps_unsorted = map(lambda x: (x, boxes_to_pack[random_keys.index(x)]), random_keys)
     btps = sorted(btps_unsorted, key=lambda x: x[0])
@@ -78,18 +103,30 @@ def get_packed_boxes_from_ind(ind, boxes_to_pack, box_types):
 
 
 def get_packing_order(ind, boxes_to_pack, box_types, test_name="default"):
+    """
+    Generate a packing order from an individual and write it as json output
+    :param ind:
+    :param boxes_to_pack:
+    :param box_types:
+    :param test_name:
+    :return:
+    """
     layers_packed = get_packed_boxes_from_ind(ind, boxes_to_pack, box_types)
     packing_order = []
     for layer in layers_packed:
         for box in layer.boxes:
             x, y, z = box.llc()
-            packing_order.append({"id": box.box_type.identifier, "x": x, "y": y, "z": z})
+            packing_order.append({"id": box.box_type.identifier, "x": x, "y": y, "z": z, "rotate": box.rotate})
             print(f"{box.box_type.identifier} at {box.llc()}")
     with open(f"packing_order_{test_name}.json", 'w') as json_file:
         json.dump(packing_order, json_file, indent=4)
 
 
 def run_tests():
+    """
+    Runs different test scenarios
+    :return:
+    """
     db.connect()
     db.create_tables([Result])
 
@@ -127,17 +164,17 @@ if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.read("config.ini")
     start = timeit.default_timer()
-    boxes_to_pack, box_types = read_input("resources/tests/umpalettierung/umpalettierung1.csv")
+    boxes_to_pack, box_types = read_input("resources/tests/umpalettierung/umpalettierung8.csv")
     size_of_population = int(config["genetics"]["population_multiplier"]) * len(boxes_to_pack)
     number_of_generations = int(config["genetics"]["number_of_generations"])
-    NGEN = 100
     pop, stats, hof = run_genetics(boxes_to_pack, box_types, number_of_generations, size_of_population)
     stop = timeit.default_timer()
     print('Time: ', stop - start)
-    width = 1200
-    depth = 800
-    height = 1500
-    boxes_packed = get_packed_boxes_from_ind(hof[0])
+    width = int(config["palette"]["width"])
+    depth = int(config["palette"]["depth"])
+    height = int(config["palette"]["height"])
+    print(stats.compile(pop))
+    boxes_packed = get_packed_boxes_from_ind(hof[0], boxes_to_pack, box_types)
     window3d = Window3D(boxes_packed, width, depth, height, width=854, height=480, caption='Palettierung',
                         resizable=True)
     glEnable(GL_DEPTH_TEST)

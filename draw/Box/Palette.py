@@ -1,3 +1,5 @@
+import configparser
+
 import pyglet
 from pyglet.gl import GL_QUADS
 
@@ -14,9 +16,15 @@ class Palette(BoxDraw):
         self.batch = pyglet.graphics.Batch()
 
         tex_coords = ('t2f', (0, 0, 1, 0, 1, 1, 0, 1,))
+        config = configparser.ConfigParser()
+        config.read("config.ini")
+        width = int(config["palette"]["width"])
+        depth = int(config["palette"]["depth"])
+        height = int(config["palette"]["height"])
 
         x, y, z = 0, 0, 0
-        X, Y, Z = x + 120, y - 2, z + 80
+        X, Y, Z = x + width/10, y - 2, z + depth/10
+        # Division by 10 to scale it to the rendering system
 
         self.batch.add(4, GL_QUADS, self.side, ('v3f', (x, y, z, x, y, Z, x, Y, Z, x, Y, z,)), tex_coords)
         self.batch.add(4, GL_QUADS, self.side, ('v3f', (X, y, Z, X, y, z, X, Y, z, X, Y, Z,)), tex_coords)

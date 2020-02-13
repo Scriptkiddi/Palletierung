@@ -23,3 +23,4 @@ class BoxDraw:
 
     def draw(self):
         self.batch.draw()
+        self.lines.draw()

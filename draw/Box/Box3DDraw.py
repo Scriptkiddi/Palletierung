@@ -1,6 +1,6 @@
 import pyglet
 import hashlib
-from pyglet.gl import GL_QUADS
+from pyglet.gl import GL_QUADS, GL_LINES
 
 from draw.Box.BoxDraw import BoxDraw
 
@@ -57,6 +57,7 @@ class Box3DDraw(BoxDraw):
         self.bottom = self.get_tex(color)
 
         self.batch = pyglet.graphics.Batch()
+        self.lines = pyglet.graphics.Batch()
 
         tex_coords = ('t2f', (0, 0, 1, 0, 1, 1, 0, 1,))
 
@@ -69,3 +70,7 @@ class Box3DDraw(BoxDraw):
         self.batch.add(4, GL_QUADS, self.top, ('v3f', (x, Y, Z, X, Y, Z, X, Y, z, x, Y, z,)), tex_coords)
         self.batch.add(4, GL_QUADS, self.side, ('v3f', (X, y, z, x, y, z, x, Y, z, X, Y, z,)), tex_coords)
         self.batch.add(4, GL_QUADS, self.side, ('v3f', (x, y, Z, X, y, Z, X, Y, Z, x, Y, Z,)), tex_coords)
+        line_color = (0, 0, 0, 255, 0, 0, 0, 255)
+        #self.lines.add(2, GL_LINES, None, ('v3f', (x, y, Z, X, y, Z,)), ('c3B', line_color))
+
+

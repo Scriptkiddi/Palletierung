@@ -18,6 +18,13 @@ class EmptyMaximumSpace(Cube):
         return self.__str__()
 
     def crop_layer(self, layer):
+        """
+        If a layer overlaps into another ems the process as to be splitted to both ems.
+        This function calculates the layer that is completly encapsualted by this ems.
+
+        :param layer:
+        :return:
+        """
         layer_cropped = deepcopy(layer)
         x1, y1, z1 = self.llc()
         x2, y2, z2 = self.urc()

@@ -1,0 +1,464 @@
+[
+    {
+        "id": "5607715 Eier",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "5607715 Eier",
+        "x": 0,
+        "y": 325,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "5607715 Eier",
+        "x": 435,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "5607715 Eier",
+        "x": 435,
+        "y": 325,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 240,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 340,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 440,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 640,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 740,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 840,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 940,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 1040,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 400,
+        "z": 140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 400,
+        "z": 410,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 400,
+        "z": 680,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 400,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 400,
+        "z": 1220,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 870,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 870,
+        "y": 0,
+        "z": 270,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 870,
+        "y": 0,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 870,
+        "y": 0,
+        "z": 810,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 870,
+        "y": 0,
+        "z": 1080,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 300,
+        "y": 0,
+        "z": 140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 300,
+        "y": 0,
+        "z": 410,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 300,
+        "y": 0,
+        "z": 680,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 300,
+        "y": 0,
+        "z": 950,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 300,
+        "y": 0,
+        "z": 1220,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 240,
+        "z": 140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 440,
+        "z": 140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 240,
+        "z": 390,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 440,
+        "z": 390,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 240,
+        "z": 640,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 440,
+        "z": 640,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 240,
+        "z": 890,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 440,
+        "z": 890,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 240,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 550,
+        "y": 440,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "5607715 Eier",
+        "x": 550,
+        "y": 240,
+        "z": 1390,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 0,
+        "y": 0,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "ApfelsaftAutoParam",
+        "x": 0,
+        "y": 200,
+        "z": 1140,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    }
+]

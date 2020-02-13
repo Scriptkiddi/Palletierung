@@ -17,6 +17,12 @@ palette = EmptyMaximumSpace(0, 0, 0, palette_width, palette_depth, palette_heigh
 
 
 def difference_process_wrapper(empty_maximal_spaces, layer):
+    """
+    Handles refactoring ems to allow for layers that reach across multiple ems
+    :param empty_maximal_spaces:
+    :param layer:
+    :return:
+    """
     new_emss = []
     emss_to_remove = []  # Changing a list while iterating over it does not work in python
     for ems in empty_maximal_spaces:
@@ -34,6 +40,14 @@ def difference_process_wrapper(empty_maximal_spaces, layer):
 
 
 def placement(boxes_to_pack, vector_layer_types, debug=False, full_support=True):
+    """
+    Runs the placement process from http://mauricio.resende.info/doc/brkga-pack3d.pdf page 12
+    :param boxes_to_pack:
+    :param vector_layer_types:
+    :param debug:
+    :param full_support:
+    :return:
+    """
     # print("{} need to be packed".format(len(boxes_to_pack)))
     ITER = 0
     empty_maximal_spaces = [deepcopy(palette)]  # Empty bin Maximal Space
@@ -50,11 +64,9 @@ def placement(boxes_to_pack, vector_layer_types, debug=False, full_support=True)
                 i = j
         box = boxes_to_pack[i]
         box_type = box.get_type()
-        # TODO add a way to add and later remove ems spaces to build over empty spaces if its possible
-        #
-        #empty_maximal_spaces, original_empty_maximal_spaces = max_product_join(box_type, empty_maximal_spaces)
         ems = back_bottom_left(box, empty_maximal_spaces)
         if ems is None:
+            # Good place to do weight checks if required
             if debug:
                 print("Cannot fit box {} of  {}".format(box, box_type))
             box.get_type().skip = True
@@ -82,7 +94,7 @@ def placement(boxes_to_pack, vector_layer_types, debug=False, full_support=True)
             # emss = empty_maximal_spaces
             empty_maximal_spaces = difference_process_wrapper(empty_maximal_spaces, layer)
             if full_support:
-                empty_maximal_spaces = max_join(layer, empty_maximal_spaces)
+               empty_maximal_spaces = max_join(layer, empty_maximal_spaces)
         if debug:
             print("-----")
     return layers, empty_maximal_spaces
@@ -98,52 +110,6 @@ def max_join(layer, empty_maximal_spaces):
     :return: new list where spaces that have the same height are joined together
     """
     emss_with_same_height = []
-    for ems in empty_maximal_spaces:
-        if ems.llc()[2] == layer.urc()[2]:
-            emss_with_same_height.append(ems)
-    if len(emss_with_same_height) <= 1:
-        return empty_maximal_spaces
-    # print(emss_with_same_height)
-    emss_first_round = [deepcopy(palette)]
-    for ems in emss_with_same_height:
-        empty_maximal_spaces.remove(ems)
-        emss_first_round = difference_process_wrapper(emss_first_round, ems)
-    # print(emss_first_round)
-    emss_second_round = [deepcopy(palette)]
-    for ems in emss_first_round:
-        emss_second_round = difference_process_wrapper(emss_second_round, ems)
-    empty_maximal_spaces += emss_second_round
-    return empty_maximal_spaces
-
-
-def max_product_join(box_type, empty_maximal_spaces):
-    """
-    This function implements a derivation of the maxjoin procedure from http://mauricio.resende.info/doc/brkga-pack3d.pdf
-    It also merges empty spaces that can be briged by the given box_type
-
-    :param layer: layer that was just placed
-    :param empty_maximal_spaces:  list of empty maximal spaces that resulted from placing said layer
-    :return: new list where spaces that have the same height are joined together
-    """
-
-    # TODO split ems into same height
-    original_empty_maximal_spaces = deepcopy(empty_maximal_spaces)
-    emss_sorted_by_same_height = []
-    for ems in empty_maximal_spaces:
-        if emss_sorted_by_same_height[ems.llc()[2]] is None:
-            emss_sorted_by_same_height[ems.llc()[2]] = [ems]
-        else:
-            emss_sorted_by_same_height[ems.llc()[2]].append(ems)
-    emss_sorted_by_same_height[:] = [x for x in emss_sorted_by_same_height if not len(x) > 1]
-
-    # todo add distance function for ems to calculate distance in a direction between two ems
-    # todo if distance is smaller than our box length in that direction merge
-    # todo carfule if 3 in a row how is the handling done merge solution sort acending from point 0 to start comparison
-    # todo merge first 2 and then continue
-
-
-
-
     for ems in empty_maximal_spaces:
         if ems.llc()[2] == layer.urc()[2]:
             emss_with_same_height.append(ems)

@@ -1,0 +1,673 @@
+[
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 100,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 100,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 300,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 300,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 500,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 500,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 600,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 600,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 700,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 800,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 800,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 900,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 900,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 1000,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 1000,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 1100,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 1100,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 1200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 1200,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 1300,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 1300,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 0,
+        "y": 0,
+        "z": 1400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Kaufland-Kisten-klein",
+        "x": 400,
+        "y": 0,
+        "z": 1400,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 300,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 300,
+        "z": 270,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 300,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 300,
+        "z": 810,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 0,
+        "y": 300,
+        "z": 1080,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 800,
+        "y": 0,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 800,
+        "y": 0,
+        "z": 270,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 800,
+        "y": 0,
+        "z": 540,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 800,
+        "y": 0,
+        "z": 810,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "Pasta",
+        "x": 800,
+        "y": 0,
+        "z": 1080,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 0,
+        "y": 540,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 300,
+        "y": 540,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 600,
+        "y": 300,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 800,
+        "y": 550,
+        "z": 0,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 550,
+        "y": 300,
+        "z": 250,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 0,
+        "y": 540,
+        "z": 250,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 550,
+        "y": 300,
+        "z": 500,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 750,
+        "y": 550,
+        "z": 250,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 550,
+        "y": 300,
+        "z": 750,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 0,
+        "y": 540,
+        "z": 500,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 550,
+        "y": 300,
+        "z": 1000,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 750,
+        "y": 550,
+        "z": 500,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 550,
+        "y": 300,
+        "z": 1250,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 0,
+        "y": 540,
+        "z": 750,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 0,
+        "y": 300,
+        "z": 1350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 0,
+        "y": 500,
+        "z": 1350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 300,
+        "y": 300,
+        "z": 1350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 750,
+        "y": 550,
+        "z": 750,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 750,
+        "y": 300,
+        "z": 1350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 750,
+        "y": 500,
+        "z": 1350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "id": "4077 Apfelsaft",
+        "x": 800,
+        "y": 0,
+        "z": 1350,
+        "rotate": [
+            true,
+            false,
+            false
+        ]
+    }
+]
